@@ -1,0 +1,118 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width:1200px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+#spotlight {
+    height: 100vh;
+}
+#spotlight .wrapper {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#spotlight .wrapper div.left {
+    width: 30%;
+}
+#spotlight .wrapper div.left h1 {
+    width: 120px;
+    display: block;
+    margin-bottom: 80px;
+}
+#spotlight .wrapper div.left h1 img {
+    width: 100%;
+}
+#spotlight .wrapper div.left h2.oops {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #0668c9;
+}
+#spotlight .wrapper div.left h2.title {
+    font-size: 52px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+#spotlight .wrapper div.left p {
+    font-size: 24px;
+    font-weight: 600;
+    color: #232e3f;
+}
+#spotlight .wrapper div.left a {
+    font-size: 18px;
+    display: inline-block;
+    font-weight: 600;
+    padding: 10px 15px;
+    background-color: #0668c9;
+    color: #fff;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+#spotlight .wrapper div.left a:hover {
+    transform: scale(1.1);
+    transition-duration: 500ms;
+}
+#spotlight .wrapper div.right {
+    width: 70%;
+    display: block;
+}
+#spotlight .wrapper div.right img {
+    width: 100%;
+    display: block;
+}
+
+@media all and (max-width: 1080px) {
+    #spotlight .wrapper {
+        display: block;
+    }
+    #spotlight .wrapper div.left {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    #spotlight .wrapper div.right {
+        width: 100%;
+        text-align: center;
+    }
+    
+}
+@media all and (max-width: 480px) {
+    #spotlight .wrapper div.left h2.oops {
+        font-size: 36px;
+    }
+    #spotlight .wrapper div.left h2.title {
+        font-size: 42px;
+    }
+    #spotlight .wrapper div.left p {
+        font-size: 20px;
+    }
+    #spotlight .wrapper div.left h1 {
+        width: 100px;
+    }
+
+}
